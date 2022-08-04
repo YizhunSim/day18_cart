@@ -20,8 +20,9 @@
       <tr>
         <td class="cart">
           <h3>Contents</h3>
-          <div>Apple</div>
-          <div>Orange</div>
+          <div data-th-each="c: ${cart}">
+            <span data-th-text="${c}"></span>
+          </div>
         </td>
 
         <td>
